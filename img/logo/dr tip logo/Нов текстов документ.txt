@@ -1,0 +1,10 @@
+<div class="animbrand d-flex mr-5">
+				<a class="navbar-brand animate ml-4 mr-5" href="#">
+					<span class="bracket-left">&lt;</span>
+					<img src="img/logo/logo_head.png" class="mb-1" width="60px" height="70px">
+					<span class="bracket-right">&gt;</span>
+				</a>
+				<p class="text-white" style="font-size: 30px; position: absolute; margin-left: 105px; margin-top: 30px;"><span style="font-size: 50px; margin-top: 0px; margin-left: -25px; position: absolute;">/</span>Jobs</p>
+				<br>
+				<span class="text-white" style="position: absolute; font-size: 10px; margin-left: 95px; margin-top: 55px;">For Web Developers</span>
+			</div>
