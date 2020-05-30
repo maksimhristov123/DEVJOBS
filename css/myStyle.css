@@ -1206,8 +1206,8 @@ footer .app a {
 	.ur-detail-wrap.create-kit div.company-follow-btn {
 		position: relative;
 		text-align: center;
-		margin-top: -40px;
-		margin-bottom: 20px;
+		margin-top: -30px;
+		margin-bottom: 40px;
 		margin-left: 30px;
 	}
 	
@@ -1215,7 +1215,7 @@ footer .app a {
 	.advance-detail.detail-desc-caption ul li .j-applied,
 	.advance-detail.detail-desc-caption ul li .j-shared {
 		font-size: 50px;
-		font-weight: 500;
+		font-weight: 600;
 	}
 	
 	.advance-detail.detail-desc-caption ul li p {
@@ -1798,13 +1798,19 @@ section.browse-jobs-head-section + .container-fluid {
     border: 1px solid #CB2D6F;
     height: 140px;
     border-radius: 50%;
-    margin: 0;
     padding: 9px;
     margin: 0 auto;
     position: relative;
     -webkit-transform: translateY(-50px);
     -o-transform: translateY(-50px);
     transform: translateY(-50px);
+}
+
+
+.detail-pic a{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
 }
 
 .detail-pic img {
@@ -1817,8 +1823,24 @@ section.browse-jobs-head-section + .container-fluid {
 
 a.detail-edit {
     position: absolute;
-    left: 44%;
-    bottom: -12px;
+    left: 75%;
+    bottom: 10px;
+    
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    background: #CB2D6F;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a.detail-edit span{
+    display: inline-block;
+    vertical-align: top;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 0;
+    margin: auto 0;
 }
 
 a.detail-edit i {
@@ -1856,6 +1878,10 @@ a.detail-edit i {
     text-transform: capitalize;
     padding: 7px 25px;
     border-radius: 2px;
+}
+
+.advance-detail.detail-desc-caption ul{
+    padding-left: 0;
 }
 
 .advance-detail.detail-desc-caption ul li strong {
@@ -2019,7 +2045,7 @@ a.detail-edit i {
 	background-color: white;
 	padding: 8px 20px;
 	border-radius: 5px;
-	font-size: 16px;
+	font-size: 90%;
 	font-weight: bold;
 	margin-bottom: 5px;
 }
@@ -2182,9 +2208,9 @@ nav > div a.nav-item.nav-link:focus
 .main .profile-page-tabs .nav a.active,
 .main .profile-page-tabs .nav a.active:focus {
     background: rgba(203, 45, 111, 0.15);
-	color: #501F3A;
-    border-right-color: #501F3A;
-    border-bottom-color: #501F3A;
+	color: #c791af;
+    border-right-color: #e6a6c9;
+    border-bottom-color: #e6a6c9;
 }
 /*PROFILE PAGE TABS END*/
 
