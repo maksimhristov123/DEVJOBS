@@ -47,39 +47,40 @@ li {
 }
 /*HEADER TOP END*/
 
-header .navbar {
+header nav {
 	box-shadow: 0 10px 12px rgba(52, 58, 64, 0.8);
 	border-bottom: 4px solid #cb2d6f;
+	margin-top: 17px;
 }
 
-header .navbar .dropdown-menu {
+header nav .dropdown-menu {
 	border-top: 3px solid #CB2D6F;
 }
 
-header .navbar .navbar-brand.animate {
+header nav .navbar-brand.animate {
 	display: flex;
 }
 
-header .navbar .navbar-brand.animate .slash-right {
+header nav .navbar-brand.animate .slash-right {
 	margin-top: 10px;
 	color: white;
 }
 
-header .navbar .navbar-brand.animate > div {
+header nav .navbar-brand.animate > div {
 	margin-top: 27px;
 	margin-left: 3px;
 	color: white;
 }
 
-header .navbar .navbar-brand.animate > div small {
+header nav .navbar-brand.animate > div small {
 	font-size: 12px;
 }
 
-header .navbar .navbar-brand.animate .slash-right {
+header nav .navbar-brand.animate .slash-right {
 	font-size: 50px;
 }
 
-header .navbar .navbar-brand.animate > div h3 {
+header nav .navbar-brand.animate > div h3 {
 	margin: 0 0 -10px 0;
 	padding: 0;
 }
@@ -2189,7 +2190,8 @@ nav > div a.nav-item.nav-link:focus
 
 /*PROFILE PAGE ADDRESS TAB*/
 #profile-page-address-content table {
-	box-shadow: inset 0px 0px 12px rgba(52, 58, 64, 0.8);
+	/*box-shadow: inset 0px 0px 12px rgba(52, 58, 64, 0.8);*/
+	box-shadow: inset 0px 0px 12px 5px rgba(52, 58, 64, 0.4);
 }
 /*PROFILE PAGE ADDRESS TAB END*/
 
