@@ -1,0 +1,58 @@
+
+/****************************************Detail Candidat Edit***********************************************/
+
+@media (min-width: 992px){
+    
+    /********************************Animation on big screens  for  edit btn in candidate_profile page*******************************************************/
+    a.detail-edit{
+        -webkit-transition: width 1s;
+        -webkit-transition: width 1s, border-bottom-right-radius 1s, border-top-left-radius 1s;
+        transition: width 1s, border-bottom-right-radius 1s, border-top-left-radius 1s;
+    }
+    
+    a.detail-edit:hover{
+        width: 120px;
+        border-bottom-right-radius: 0px;
+        border-top-left-radius: 0px;
+    }
+    
+    .detail-edit span{
+        -webkit-transition: max-width 1s;
+        transition: max-width 1s;
+    }
+    
+    .detail-edit:hover span{
+        max-width: 110px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
