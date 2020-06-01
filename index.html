@@ -32,12 +32,12 @@
 </head>
 
 <body>
-	<header class="fixed-top" style="background-color: aliceblue;">
+	<header class="fixed-top">
 		<div class="d-flex justify-content-around header-top">
 			<div class="contancts-top">
-				<ul class="p-0">
-					<li><a href="#"><i class="fas fa-mobile-alt"></i> + 000 123 456 7890</a></li>
-					<li><a href="#"><i class="far fa-envelope"></i> info@webjobber.com</a></li>
+				<ul class="p-0 m-0">
+					<li><a href="#"><i class="fas fa-mobile-alt"></i>+ 000 123 456 7890</a></li>
+					<li><a href="#"><i class="far fa-envelope"></i>info@webjobber.com</a></li>
 				</ul>
 			</div>
 			<div>
@@ -51,7 +51,7 @@
 				<a class="navbar-brand animate" href="index.html">
 					<span class="bracket-left">&lt;</span>
 					<!--<img src="img/logo/logo_white_small.png" class="mb-1" width="140px" height="65px">-->
-					<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="80px" viewBox="0 0 612 792" style="enable-background:new 0 0 612 792;" xml:space="preserve">
+					<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="80px" viewbox="0 0 612 792" style="enable-background:new 0 0 612 792;" xml:space="preserve">
 						<path style="fill:#CB2D6F;stroke:#CB2D6F;stroke-miterlimit:10;" d="M89.944,394.145c0.099-1.366,2.525-0.604,3.811-0.831
 							c46.448-8.218,125.849,51.474,294.455,39.664c0,0-61.445-55.83-111.063-69.584c0,0,149.426,3.297,221.178,29.565
 							c0,0,6.87,20.605,11.451,95.045l27.479,4.855c0,0,8.397-64.731,3.818-78.486c0,0,66.852-120.56,1.365-215.229
@@ -99,8 +99,8 @@
 						<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
 					</li>
 					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Candidates</a>
-						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Candidates</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown1">
 							<div class="d-block d-md-flex">
 								<div class="ml-2">
 									<h3 class="dropdown-item" href="#">Candidates header</h3>
@@ -130,8 +130,8 @@
 						</div>
 					</li>
 					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Employers</a>
-						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Employers</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown2">
 							<div class="d-block d-md-flex">
 								<div class="ml-2">
 									<h3 class="dropdown-item" href="#">Heading One</h3>
@@ -876,7 +876,6 @@
 
 
 		/* Modal form */
-
 		$('.input').focus(function(){
 			$(this).parent().find(".label-txt").addClass('label-active');
 		});
