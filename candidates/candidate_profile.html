@@ -29,8 +29,6 @@
 	<link rel="stylesheet" href="style.css">
 
 
-	<!-- Link to your javascript file -->
-	<!--<script src="javascript/myScript.js"></script>-->
 	
 	<script>
 		$(document).ready(function () {
@@ -42,17 +40,235 @@
 </head>
 
 <body>
-	
+    
+    <header class="fixed-top">
+		<div class="d-flex justify-content-around header-top">
+			<div class="contancts-top">
+				<ul class="p-0">
+					<li><a href="#"><i class="fas fa-mobile-alt"></i> + 000 123 456 7890</a></li>
+					<li><a href="#"><i class="far fa-envelope"></i> info@webjobber.com</a></li>
+				</ul>
+			</div>
+			<div>
+				<!-- Register modal button -->
+				<a href="#" class="register-top" data-toggle="modal" data-target="#registerModal"><i class="fa fa-user-plus"></i>Register</a>
+			</div>
+		</div>
+
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark fade-in">
+			<div class="animbrand ml-5 mt-auto">
+				<!-- <a class="navbar-brand animate" href="index.html">
+					<span class="bracket-left">&lt;</span>
+					<img src="img/logo/logo_white_small.png" class="mb-1" width="140px" height="65px">
+					<span class="bracket-right">&gt;</span>
+				</a> -->
+
+				<a class="navbar-brand animate" href="index.html">
+					<span class="bracket-left">&lt;</span>
+					<!--<img src="img/logo/logo_white_small.png" class="mb-1" width="140px" height="65px">-->
+					<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="80px" viewBox="0 0 612 792" style="enable-background:new 0 0 612 792;" xml:space="preserve">
+						<path style="fill:#CB2D6F;stroke:#CB2D6F;stroke-miterlimit:10;" d="M89.944,394.145c0.099-1.366,2.525-0.604,3.811-0.831
+							c46.448-8.218,125.849,51.474,294.455,39.664c0,0-61.445-55.83-111.063-69.584c0,0,149.426,3.297,221.178,29.565
+							c0,0,6.87,20.605,11.451,95.045l27.479,4.855c0,0,8.397-64.731,3.818-78.486c0,0,66.852-120.56,1.365-215.229
+							c0,0,12.375,27.51-3.656,59.065c0,0-17.56-35.603-41.985-38.838c0,0,60.307-87.382,35.878-211.987
+							c0,0-32.822,93.846-148.848,159.384c0,0,28.241-36.411,22.899-62.302c0,0-77.098,76.059-145.796,85.767c0,0-9.545,0.965-19.277,8.4
+							c0,0,13.167-27.006,34.922-33.68c0,0-285.868,62.504-235.487,233.23c0,0,11.455,82.541,10.691,94.674l24.424-4.86
+							C79.258,458.061,89.182,404.667,89.944,394.145z"/>
+						<path style="fill:#14A098;stroke:#14A098;stroke-miterlimit:10;" d="M547.938,520.715c-18.756-12.182-134.217-36.661-221.26,14.609
+							c0,0-21.867,18.893-51.249,0.963c-29.382-17.953-159.819-54.112-234.86-19.007c0,0,2.335,53.884,8.334,64.212
+							c1.787,3.066,10.717,3.32,10.878,5.244c1.397,15.96,12.708,108.979,113.743,104.903c107.08-4.351,111.5-94.554,111.636-94.554
+							c0.07-14.061,28.145-14.609,30.824,0.046c0,0.023,8.657,91.395,111.729,94.416c111.065,3.275,111.408-103.413,111.408-103.413
+							l8.999-1.993C548.12,586.142,555.563,525.686,547.938,520.715z M177.327,674.969c-22.559,0-93.5-3.137-101.126-90.889
+							c-4.991-57.364-4.808-70.372,89.699-60.686c82.05,8.381,105.981,28.899,105.316,64.875
+							C270.872,607.573,254.499,674.945,177.327,674.969z M527.511,595.644c-2.609,13.97-17.061,80.127-87.408,80.149
+							c-22.559,0-101.149,1.123-108.775-86.63c-4.602-53.038,36.229-59.746,110.31-65.585
+							C530.968,516.549,537.815,540.593,527.511,595.644z"/>
+						<path style="fill:transparent;stroke:transparent;stroke-miterlimit:10;" d="M271.215,588.27c-0.344,19.304-16.716,86.676-93.889,86.699
+							c-22.559,0-93.5-3.137-101.126-90.889c-4.991-57.364-4.808-70.373,89.699-60.686C247.949,531.775,271.88,552.294,271.215,588.27z"/>
+						<path style="fill:transparent;stroke:transparent;stroke-miterlimit:10;" d="M527.511,595.644c-2.609,13.97-17.061,80.127-87.408,80.149
+							c-22.559,0-101.149,1.123-108.775-86.63c-4.602-53.038,36.229-59.746,110.31-65.585
+							C530.968,516.549,537.815,540.593,527.511,595.644z"/>
+						<path style="fill:#FFFFFF;stroke:#000000;stroke-miterlimit:10;" d="M76.2,528.729"/>
+						<path style="fill:#FFFFFF;stroke:#000000;stroke-miterlimit:10;" d="M171.271,581.65"/>
+						<path style="fill:#FFFFFF;stroke:#000000;stroke-miterlimit:10;" d="M201.085,625.76c-35.611-0.419-39.712-62.428,5.901-56.896 c0.219,2.374-11.271,28.809,23.8,25.888C230.991,596.759,231.295,626.114,201.085,625.76z"/>
+						<path style="fill:#FFFFFF;stroke:#000000;stroke-miterlimit:10;" d="M395.734,625.76c-35.61-0.419-39.714-62.427,5.903-56.896 c0.217,2.374-11.271,28.807,23.797,25.888C425.64,596.759,425.943,626.114,395.734,625.76z"/>
+						<path style="fill:transparent;stroke:white;stroke-width:14;stroke-miterlimit:10;" d="M350.908,714.477l52.103,40.563l-25.696-19.772
+							c-5.563,23.867-41.385,56.423-74.152,50.57"/>
+						</svg>
+					<span class="slash-right">&#47;</span>
+					<div>
+						<h3>Job</h3>
+						<small>for Web Developers</small>
+					</div>
+					<span class="bracket-right">&gt;</span>
+				</a>
+			</div>
+
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mt-1 ml-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Candidates</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<div class="d-block d-md-flex">
+								<div class="ml-2">
+									<h3 class="dropdown-item" href="#">Candidates header</h3>
+									<div class="dropdown-divider mx-3"></div>
+									<a class="dropdown-item" href="apply_job.html">Apply Job</a>
+									<a class="dropdown-item" href="#">Candidate Dashboard</a>
+									<a class="dropdown-item" href="#">Messages</a>
+									<a class="dropdown-item" href="#">Resume</a>
+									<a class="dropdown-item" href="#">Account Settings</a>
+								</div>
+								<div class="mr-2">
+									<h3 class="dropdown-item" href="#">Candidate search</h3>
+									<div class="dropdown-divider mx-3"></div>
+									<a class="dropdown-item" href="#">Find Candidate</a>
+									<a class="dropdown-item" href="#">Map Search</a>
+									<a class="dropdown-item" href="#">Search with Filters</a>
+									<a class="dropdown-item" href="#">Search with Alphabets</a>
+								</div>
+								<div class="mr-2">
+									<h3 class="dropdown-item" href="#">Candidates pages</h3>
+									<div class="dropdown-divider mx-3"></div>
+									<a class="dropdown-item" href="candidate_profile.html">Candidate Profile</a>
+									<a class="dropdown-item" href="#">Job History</a>
+									<a class="dropdown-item" href="#">CV</a>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Employers</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<div class="d-block d-md-flex">
+								<div class="ml-2">
+									<h3 class="dropdown-item" href="#">Heading One</h3>
+									<div class="dropdown-divider mx-3"></div>
+									<a class="dropdown-item" href="job_details.html">Job Details</a>
+									<a class="dropdown-item" href="#">Message</a>
+								</div>
+								<div class="mr-2">
+									<h3 class="dropdown-item" href="#">Heading Two</h3>
+									<div class="dropdown-divider mx-3"></div>
+									<a class="dropdown-item" href="#">Job History</a>
+									<a class="dropdown-item" href="#">Candidate Applications</a>
+									<a class="dropdown-item" href="#">Shortlisted Candidates</a>
+									<a class="dropdown-item" href="#">Payment History</a>
+								</div>
+								<div class="mr-2">
+									<h3 class="dropdown-item" href="#">Heading Three</h3>
+									<div class="dropdown-divider mx-3"></div>
+									<a class="dropdown-item" href="employer_profile.html">Employer Profile</a>
+									<a class="dropdown-item" href="#">Post a Job</a>
+									<a class="dropdown-item" href="#">Account Settings</a>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Search Jobs</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<div class="d-block d-md-flex">
+								<div class="ml-2">
+									<a class="dropdown-item" href="#">Locations</a>
+									<a class="dropdown-item" href="#">Job Full Time</a>
+									<a class="dropdown-item" href="#">Map Search</a>
+									<a class="dropdown-item" href="browse_jobs.html">Browse Jobs</a>
+									<a class="dropdown-item" href="#">Job with Filters</a>
+									<a class="dropdown-item" href="#">Search by Alphabets</a>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">About us</a>
+					</li>
+				</ul>
+
+				<!--Login Form-->
+				<!--
+				<ul class="navbar-nav mb-2 ml-auto">
+					<li class="nav-item">
+						<a class="nav-link login-top" href="#"><i class="fa fa-user mr-2 pt-3"></i>Login</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link register-top" href="#"><i class="fa fa-user-plus mr-2 pt-3"></i>Register</a>
+					</li>
+				</ul>
+				-->
+				<!--Login Form END-->
+
+				<!--Inline Login Form-->
+				<form class="form-inline ml-auto">
+					<div class="input-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text" id="basic-addon11">Q-Login</span>
+						</div>
+						<input type="text" class="form-control text-white" placeholder="E-mail" aria-label="E-mail" aria-describedby="basic-addon11">
+
+						<!-- Login modal button -->
+						<a href="#" class="modal-login-button" data-toggle="modal" data-target="#loginModal"><i class="fas fa-sign-in-alt"></i></a>
+					</div>
+				</form>
+				<!--Inline Login Form END-->
+			</div>
+		</nav>
+	</header>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+<!--	**************************************************************************************HERE IS MY CODE-->
 
 	<main class="bg-white main" id="candidate_profile">
-        <div class="container">
-            <div class="ur-detail-wrap create-kit padd-bot-0">
+        <div class="row container d-block d-lg-flex mx-auto">
+            
+            <div class="col col-lg-4 ur-detail-wrap create-kit padd-bot-0" id="exp_candidate">
+                <h4 class="text-center text-uppercase">Expirience</h4>
+                
+                <ul>
+                    <li><i class="fab fa-python"></i></li>
+                    <li><i class="fab fa-html5"></i></li>
+                    <li><i class="fab fa-php"></i></li>
+                </ul>
+            </div>
+            
+            <div class="col col-lg-12 ur-detail-wrap create-kit padd-bot-0" id="profile_candidate">
                 <div class="detail-pic">
                     <a href="#" class="edit_profil"><img src="../img/clients/client-6.jpg" class="img" alt=""></a>
                     <a href="#" class="detail-edit" title="Edit Profile"><i class="far fa-edit"></i><span>Edit Profile</span></a>
                 </div>
 
-                <div class="detail-status m-lg-3"><span>Active Now</span></div>
+                <div class="detail-status m-lg-3"><span>Online</span></div>
 
                 <div class="col-md-12 col-sm-12">
                     <div class="advance-detail detail-desc-caption">
@@ -65,9 +281,12 @@
                         </ul>
                     </div>
                 </div>
-
+                <div class="arrows">
+                    <a href="#" class="open_exp_arrow" title="Open experience"><i class="fas fa-chevron-right"></i></a>
+                    <a href="#" class="open_skills_arrow" title="Open skills"><i class="fas fa-chevron-left"></i></a>
+                    
+                </div>
                 <hr>
-
                 <div class="row d-flex justify-content-between detail-panel-footer">
                     <div class="wrapper">
 						<ul class="d-flex">
@@ -78,7 +297,6 @@
 							<li class="whatsapp"><i class="fab fa-whatsapp"></i></li>
 						</ul>
 					</div>
-
                     <div class="d-flex justify-content-center mb-3 mr-sm-5 detail-pannel-footer-btn">
                     	<div class="mr-3 upload-cv-btn">
 							<button class="btn btn-cv">Upload CV</button>
@@ -92,7 +310,66 @@
                     </div>
                 </div>
             </div>
+            
+            <div class="col col-lg-4 ur-detail-wrap create-kit padd-bot-0" id="skills_candidate">
+                <h4 class="text-center text-uppercase">Skills</h4>
+                
+                <ul>
+                    <li><i class="fab fa-python"></i></li>
+                    <li><i class="fab fa-html5"></i></li>
+                    <li><i class="fab fa-php"></i></li>
+                </ul>
+            </div>
         </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
 
         <div class="container d-md-flex">
 
@@ -109,7 +386,7 @@
 
                 <div class="tab-content py-3 px-sm-0 p-lg-5" id="nav-tabContent">
                     <div class="tab-pane fade show active " id="profile-page-about-content" role="tabpanel" aria-labelledby="profile-page-about-tab">
-                        <h5>About Larry A. Sherrod</h5>
+                        <h5 class="text-uppercase">About Larry A. Sherrod</h5>
 
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
@@ -187,9 +464,7 @@
 
                        		<button type="button" class="load-more-btn">Load More</button>
                         </div>
-                    </div>
-
-                    
+                    </div>  
 
                     <div class="tab-pane fade" id="profile-page-resume-content" role="tabpanel" aria-labelledby="profile-page-resume-tab">
                         <h5>Resume / CV & Portfolio</h5>
@@ -1153,5 +1428,9 @@
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    
+	<!-- Link to your javascript file -->
+	<script src="script.js"></script>
 </body>
 </html>
