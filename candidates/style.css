@@ -1,9 +1,14 @@
 /****************************************Detail Candidat Edit***********************************************/
 
 
-#skills_candidate,
-#exp_candidate {
-    margin-top: 50px;
+
+#candidate_stats {
+    position: relative;
+    border-bottom: 2px solid purple;
+    -webkit-box-shadow: 12px 3px 25px 0px #d1d1d1;
+    box-shadow: 12px 3px 25px 0px #d1d1d1;
+    margin: 350px auto 50px auto;
+    background-image: url(../img/maksim/cool-background_white.png);
 }
 
 .open_exp_arrow,
@@ -11,30 +16,54 @@
     display: none;
 }
 
+.cand_skills,
+.cand_exp {
+    display: none;
+}
+
 @media (min-width: 992px) {
 
-    #skills_candidate,
-    #exp_candidate {
-        margin-top: 300px;
-        padding: 0;
-        max-width: 0;
-        overflow: hidden;
-        display: inline-block;
-        vertical-align: top;
-        white-space: nowrap;
-
-        -webkit-transition: max-width .5s;
-        transition: max-width .5s;
-    }
-
-    #profile_candidate {
-        position: relative;
+    #candidate_stats {
+        width: 1110px;
+        margin: 300px auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
 
-    #skills_candidate.active_skill_tab,
-    #exp_candidate.active_xp_tab {
-        max-width: 500px;
+    .cand_skills {
+        width: 330px;
+        display: none;
+        transition: animation .8s;
+    }
+
+    .cand_exp {
+        width: 330px;
+        display: none;
+        transition: animation .8s;
+    }
+
+    .cand_profile {
+        display: inherit;
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .detail-panel-footer {
+        margin: auto 0;
     }
 
     .open_exp_arrow,
@@ -46,12 +75,12 @@
     }
 
     .open_exp_arrow {
-        left: 1%;
+        left: 2%;
         color: #CB2D6F;
     }
 
     .open_skills_arrow {
-        right: 1%;
+        right: 2%;
         color: #0FD3F0;
     }
 
@@ -79,6 +108,20 @@
 }
 
 
+
+
+.active_open {
+    display: inline-block;
+    animation: slideProfileMenu .8s ease;
+}
+
+@keyframes slideProfileMenu{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 /*
 color: #CB2D6F;
 color: #D3F00F;
