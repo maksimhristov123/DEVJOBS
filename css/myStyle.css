@@ -1219,8 +1219,8 @@ footer .app a {
 		max-height: 50px;
 	}
 	
-	.ur-detail-wrap.create-kit .detail-status,
-	.ur-detail-wrap.create-kit div.company-follow-btn {
+	.ur-detail-wrap .detail-status,
+	.ur-detail-wrap div.company-follow-btn {
 		position: relative;
 		text-align: center;
 		margin-top: -30px;
@@ -1797,7 +1797,7 @@ section.browse-jobs-head-section + .container-fluid {
 }
 */
 
-.ur-detail-wrap.create-kit {
+.ur-detail-wrap {
     transform: translateY(-80px);
     /*background: #ffffff;*/
     padding: 0 2em;
@@ -1931,7 +1931,7 @@ a.detail-edit i {
 }
 
 /*Candidate & Employer social*/
-.create-kit .detail-panel-footer .wrapper ul li {
+.detail-panel-footer .wrapper ul li {
 	width: 35px;
 	height: 35px;
 	line-height: 28px;
@@ -1943,7 +1943,7 @@ a.detail-edit i {
 	transition: all 0.5s ease;
 }
 
-.create-kit .detail-panel-footer .wrapper ul li i.fab {
+.detail-panel-footer .wrapper ul li i.fab {
 	color: #D8E2DC;
 	margin-bottom: 20px;
 	transition: all 0.5s ease;
@@ -1951,65 +1951,65 @@ a.detail-edit i {
 }
 
 /*facebook*/
-.create-kit .detail-panel-footer .wrapper ul li:hover.facebook {
+.detail-panel-footer .wrapper ul li:hover.facebook {
 	border: 5px solid #3b5998;
 	box-shadow: 0 0 15px #3b5998;
 	transition: all 0.5s ease;
 }
 
-.create-kit .detail-panel-footer .wrapper ul li:hover .fa-facebook-f {
+.detail-panel-footer .wrapper ul li:hover .fa-facebook-f {
 	color: #3b5998;
 	text-shadow: 0 0 15px #3b5998;
 	transition: all 0.5s ease;
 }
 
 /*twitter*/
-.create-kit .detail-panel-footer .wrapper ul li:hover.twitter {
+.detail-panel-footer .wrapper ul li:hover.twitter {
 	border: 5px solid #00aced;
 	box-shadow: 0 0 15px #00aced;
 	transition: all 0.5s ease;
 }
 
-.create-kit .detail-panel-footer .wrapper ul li:hover .fa-twitter {
+.detail-panel-footer .wrapper ul li:hover .fa-twitter {
 	color: #00aced;
 	text-shadow: 0 0 15px #00aced;
 	transition: all 0.5s ease;
 }
 
 /* instagram */
-.create-kit .detail-panel-footer .wrapper ul li:hover.instagram {
+.detail-panel-footer .wrapper ul li:hover.instagram {
 	border: 5px solid #bc2a8d;
 	box-shadow: 0 0 15px #bc2a8d;
 	transition: all 0.5s ease;
 }
 
-.create-kit .detail-panel-footer .wrapper ul li:hover .fa-instagram {
+.detail-panel-footer .wrapper ul li:hover .fa-instagram {
 	color: #bc2a8d;
 	text-shadow: 0 0 15px #bc2a8d;
 	transition: all 0.5s ease;
 }
 
 /* google */
-.create-kit .detail-panel-footer .wrapper ul li:hover.google {
+.detail-panel-footer .wrapper ul li:hover.google {
 	border: 5px solid #dd4b39;
 	box-shadow: 0 0 15px #dd4b39;
 	transition: all 0.5s ease;
 }
 
-.create-kit .detail-panel-footer .wrapper ul li:hover .fa-google {
+.detail-panel-footer .wrapper ul li:hover .fa-google {
 	color: #dd4b39;
 	text-shadow: 0 0 15px #dd4b39;
 	transition: all 0.5s ease;
 }
 
 /* whatsapp */
-.create-kit .detail-panel-footer .wrapper ul li:hover.whatsapp {
+.detail-panel-footer .wrapper ul li:hover.whatsapp {
 	border: 5px solid #4dc247;
 	box-shadow: 0 0 15px #4dc247;
 	transition: all 0.5s ease;
 }
 
-.create-kit .detail-panel-footer .wrapper ul li:hover .fa-whatsapp {
+.detail-panel-footer .wrapper ul li:hover .fa-whatsapp {
 	color: #4dc247;
 	text-shadow: 0 0 15px #4dc247;
 	transition: all 0.5s ease;
@@ -3118,13 +3118,13 @@ nav > div a.nav-item.nav-link:focus
 /*CANDIDATE PROFILE PAGE END*/
 
 /*EMPLOYER PROFILE PAGE*/
-.main .create-kit .company-follow-btn {
+.main .company-follow-btn {
     position: absolute;
     right: 15px;
     top: 15px;
 }
 
-.main .create-kit .company-follow-btn a span {
+.main .company-follow-btn a span {
     color: white;
     background-color: #14A098;
     text-transform: capitalize;
@@ -3132,21 +3132,21 @@ nav > div a.nav-item.nav-link:focus
     border-radius: 2px;
 }
 
-.main .create-kit .company-follow-btn a span:hover {
+.main .company-follow-btn a span:hover {
 	background-color: #501F3A;
 	transition: all 1.3s ease 0s;
 }
 
-.main .create-kit .company-follow-btn a:hover span {
+.main .company-follow-btn a:hover span {
 	color: white;
 	transition: all 1.3s ease 0s;
 }
 
-.main .create-kit .company-follow-btn a:hover {
+.main .company-follow-btn a:hover {
 	text-decoration: none;
 }
 
-.main .create-kit .advance-detail .jl-details a {
+.main .advance-detail .jl-details a {
 	color: #0F292F;
 }
 
