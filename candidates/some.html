@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+   <!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title>Job Webber</title>
+
+	<link rel="shortcut icon" href="#" type="image/x-icon">
+	<link rel="apple-touch-icon" href="#">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<!-- FontAwesome 5 -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+
+	<!-- For Our Partners Slider -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+
+	<!-- Link to your css file -->
+	<link rel="stylesheet" href="../css/myStyle.css">
+	<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="row content_box">
+        <div class="cont1 col-3">
+            <p>Container 1</p>
+        </div>
+        
+        <div class="cont2 col-12">
+            <p>Container Center</p>
+            <button type="button" id="left">Open left</button>
+            <button type="button" id="right">Open right</button>
+        </div>
+        
+        <div class="cont3">
+            <p>Container 3</p>
+        </div>
+    </div>
+    
+    
+    <div class="mx-auto" id="content_candidate">
+            
+            <div id="exp_candidate">
+                <h4 class="text-center text-uppercase">Expirience</h4>
+                
+                <ul>
+                    <li><i class="fab fa-python"></i></li>
+                    <li><i class="fab fa-html5"></i></li>
+                    <li><i class="fab fa-php"></i></li>
+                </ul>
+            </div>
+            
+<!--            <div class="ur-detail-wrap create-kit " id="profile_candidate">-->
+            <div class="ur-detail-wrap create-kit" id=" profile_candidate">
+                <div class="detail-pic">
+                    <a href="#" class="edit_profil"><img src="../img/clients/client-6.jpg" class="img" alt=""></a>
+                    <a href="#" class="detail-edit" title="Edit Profile"><i class="far fa-edit"></i><span>Edit Profile</span></a>
+                </div>
+
+                <div class="detail-status m-lg-3"><span>Online</span></div>
+
+                <div>
+                    <div class="advance-detail detail-desc-caption">
+                        <h4 class="text-center text-uppercase">Larry A. Sherrod</h4>
+                        <p class="text-center designation">Web Designer</p>
+                        <ul class="d-flex justify-content-around">
+                            <li><strong class="j-view">85</strong><p>New Post</p></li>
+                            <li><strong class="j-applied">110</strong><p>Job Applied</p></li>
+                            <li><strong class="j-shared">120</strong><p>Invitation</p></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="arrows">
+                    <a href="#" class="open_exp_arrow" title="Open experience"><i class="fas fa-chevron-right"></i></a>
+                    <a href="#" class="open_skills_arrow" title="Open skills"><i class="fas fa-chevron-left"></i></a>
+                    
+                </div>
+                <hr>
+                <div class="row d-flex justify-content-between detail-panel-footer">
+                    <div class="wrapper">
+						<ul class="d-flex">
+							<li class="facebook"><i class="fab fa-facebook-f"></i></li>
+							<li class="twitter"><i class="fab fa-twitter"></i></li>
+							<li class="instagram"><i class="fab fa-instagram"></i></li>
+							<li class="google"><i class="fab fa-google"></i></li>
+							<li class="whatsapp"><i class="fab fa-whatsapp"></i></li>
+						</ul>
+					</div>
+                    <div class="d-flex justify-content-center mb-3 mr-sm-5 detail-pannel-footer-btn">
+                    	<div class="mr-3 upload-cv-btn">
+							<button class="btn btn-cv">Upload CV</button>
+							<input type="file" name="myfile" />
+						</div>
+                       
+                       	<div class="upload-portfolio-btn">
+							<button class="btn btn-portfolio">Upload Portfolio</button>
+							<input type="file" name="myfile" />
+						</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="skills_candidate">
+                <h4 class="text-center text-uppercase">Skills</h4>
+                
+                <ul>
+                    <li><i class="fab fa-python"></i></li>
+                    <li><i class="fab fa-html5"></i></li>
+                    <li><i class="fab fa-php"></i></li>
+                </ul>
+            </div>
+        </div>
+    
+    <script>
+        $(document).ready(function(){
+            $("#right").click(function(){
+                $(".cont3").toggleClass("active_open");
+            });
+            
+            $("#left").click(function(){
+                $(".cont1").toggleClass("active_open");
+            });
+        })
+    </script>
+</body>
+</html>

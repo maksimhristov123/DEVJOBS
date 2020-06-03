@@ -1,27 +1,108 @@
-
 /****************************************Detail Candidat Edit***********************************************/
 
-@media (min-width: 992px){
-    
+
+
+#candidate_stats {
+    position: relative;
+    border-bottom: 2px solid purple;
+    -webkit-box-shadow: 12px 3px 25px 0px #d1d1d1;
+    box-shadow: 12px 3px 25px 0px #d1d1d1;
+    margin: 350px auto 50px auto;
+    background-image: url(../img/maksim/cool-background_white.png);
+}
+
+.open_exp_arrow,
+.open_skills_arrow {
+    display: none;
+}
+
+.cand_skills,
+.cand_exp {
+    display: none;
+}
+
+@media (min-width: 992px) {
+
+    #candidate_stats {
+        width: 1110px;
+        margin: 300px auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+
+    .cand_skills {
+        width: 330px;
+        display: none;
+        transition: animation .8s;
+    }
+
+    .cand_exp {
+        width: 330px;
+        display: none;
+        transition: animation .8s;
+    }
+
+    .cand_profile {
+        display: inherit;
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .detail-panel-footer {
+        margin: auto 0;
+    }
+
+    .open_exp_arrow,
+    .open_skills_arrow {
+        display: block;
+        position: absolute;
+        top: 50%;
+        font-size: 1.2em;
+    }
+
+    .open_exp_arrow {
+        left: 2%;
+        color: #CB2D6F;
+    }
+
+    .open_skills_arrow {
+        right: 2%;
+        color: #0FD3F0;
+    }
+
     /********************************Animation on big screens  for  edit btn in candidate_profile page*******************************************************/
-    a.detail-edit{
+    a.detail-edit {
         -webkit-transition: width 1s;
         -webkit-transition: width 1s, border-bottom-right-radius 1s, border-top-left-radius 1s;
         transition: width 1s, border-bottom-right-radius 1s, border-top-left-radius 1s;
     }
-    
-    a.detail-edit:hover{
+
+    a.detail-edit:hover {
         width: 120px;
         border-bottom-right-radius: 0px;
         border-top-left-radius: 0px;
     }
-    
-    .detail-edit span{
+
+    .detail-edit span {
         -webkit-transition: max-width 1s;
         transition: max-width 1s;
     }
-    
-    .detail-edit:hover span{
+
+    .detail-edit:hover span {
         max-width: 110px;
     }
 }
@@ -29,30 +110,20 @@
 
 
 
+.active_open {
+    display: inline-block;
+    animation: slideProfileMenu .8s ease;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@keyframes slideProfileMenu{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+/*
+color: #CB2D6F;
+color: #D3F00F;
+color: #0FD3F0;
+*/
