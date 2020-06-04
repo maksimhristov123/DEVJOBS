@@ -35,9 +35,9 @@
 	<header class="fixed-top">
 		<div class="d-flex justify-content-around header-top">
 			<div class="contancts-top">
-				<ul class="p-0">
-					<li><a href="#"><i class="fas fa-mobile-alt"></i> + 000 123 456 7890</a></li>
-					<li><a href="#"><i class="far fa-envelope"></i> info@webjobber.com</a></li>
+				<ul class="p-0 m-0">
+					<li><a href="#"><i class="fas fa-mobile-alt"></i>+ 000 123 456 7890</a></li>
+					<li><a href="#"><i class="far fa-envelope"></i>info@webjobber.com</a></li>
 				</ul>
 			</div>
 			<div>
@@ -46,18 +46,12 @@
 			</div>
 		</div>
 
-		<nav class="navbar navbar-expand-lg navbar-dark bg-dark fade-in">
+		<nav class="navbar navbar-expand-lg navbar-dark fade-in">
 			<div class="animbrand ml-5 mt-auto">
-				<!-- <a class="navbar-brand animate" href="index.html">
-					<span class="bracket-left">&lt;</span>
-					<img src="img/logo/logo_white_small.png" class="mb-1" width="140px" height="65px">
-					<span class="bracket-right">&gt;</span>
-				</a> -->
-
 				<a class="navbar-brand animate" href="index.html">
 					<span class="bracket-left">&lt;</span>
 					<!--<img src="img/logo/logo_white_small.png" class="mb-1" width="140px" height="65px">-->
-					<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="80px" viewBox="0 0 612 792" style="enable-background:new 0 0 612 792;" xml:space="preserve">
+					<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="80px" viewbox="0 0 612 792" style="enable-background:new 0 0 612 792;" xml:space="preserve">
 						<path style="fill:#CB2D6F;stroke:#CB2D6F;stroke-miterlimit:10;" d="M89.944,394.145c0.099-1.366,2.525-0.604,3.811-0.831
 							c46.448-8.218,125.849,51.474,294.455,39.664c0,0-61.445-55.83-111.063-69.584c0,0,149.426,3.297,221.178,29.565
 							c0,0,6.87,20.605,11.451,95.045l27.479,4.855c0,0,8.397-64.731,3.818-78.486c0,0,66.852-120.56,1.365-215.229
@@ -95,7 +89,7 @@
 				</a>
 			</div>
 
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 
@@ -105,8 +99,8 @@
 						<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
 					</li>
 					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Candidates</a>
-						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Candidates</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown1">
 							<div class="d-block d-md-flex">
 								<div class="ml-2">
 									<h3 class="dropdown-item" href="#">Candidates header</h3>
@@ -136,8 +130,8 @@
 						</div>
 					</li>
 					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Employers</a>
-						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Employers</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown2">
 							<div class="d-block d-md-flex">
 								<div class="ml-2">
 									<h3 class="dropdown-item" href="#">Heading One</h3>
@@ -226,11 +220,11 @@
 					</div>
 
 					<div class="col-sm-3 offset-sm-0 col-10 offset-1">
-						<select class="form-control" id='categoryList' name='categoryList' onClick="showCities()"></select>
+						<select class="form-control" id="categoryList" name="categoryList" onclick="showCities()"></select>
 					</div>
 
 					<div class="col-sm-3 offset-sm-0 col-10 offset-1">
-						<select class="form-control" id='typeList' name='typeList'></select>
+						<select class="form-control" id="typeList" name="typeList"></select>
 					</div>
 
 					<button type="submit" class="btn">Изпрати</button>
@@ -258,8 +252,7 @@
 
 			<div class="row">
 				<aside class="col-md-3 bj-filters">
-					<!--
-					<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+					<!-- <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 						<div class="panel panel-default">
 							<div class="panel-heading" role="tab" id="headingOne">
 								<h4 class="panel-title">
@@ -307,8 +300,7 @@
 								</div>
 							</div>
 						</div>
-					</div>
-					-->
+					</div> -->
 
 					<div class="panel-group" id="accordion4" role="tablist" aria-multiselectable="true">
                         <div class="panel panel-default">
@@ -407,7 +399,7 @@
                             <div class="panel-heading" role="tab" id="headingThree4">
                                 <h6 class="panel-title">
                                     <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion4" href="#collapseThree4" aria-expanded="false" aria-controls="collapseThree4">
-                                        <!--<i class="fas fa-map-marker-alt icon"></i>-->
+                                        <i class="fas fa-map-marker-alt icon"></i>
                                         <i class="fas fa-map-marked-alt icon"></i>
                                         Jobs by Location
                                     </a>
@@ -677,11 +669,11 @@
 
 							<ul class="d-none d-sm-flex mt-2 m-0 p-2 pl-3 job-list-tags">
 								<p class="m-0"><i class="fa fa-tags"></i> Keywords:</p>
-								<li><p>ui designer</li>
-								<li><p>developer</li>
-								<li><p>seniorit company</li>
-								<li><p>design</li>
-								<li><p>call center</li>
+								<li><p>ui designer</p></li>
+								<li><p>developer</p></li>
+								<li><p>seniorit company</p></li>
+								<li><p>design</p></li>
+								<li><p>call center</p></li>
 							</ul>
 						</div>
 						
@@ -737,11 +729,11 @@
 
 							<ul class="d-none d-sm-flex mt-2 m-0 p-2 pl-3 job-list-tags">
 								<p class="m-0"><i class="fa fa-tags"></i> Keywords:</p>
-								<li><p>ui designer</li>
-								<li><p>developer</li>
-								<li><p>seniorit company</li>
-								<li><p>design</li>
-								<li><p>call center</li>
+								<li><p>ui designer</p></li>
+								<li><p>developer</p></li>
+								<li><p>seniorit company</p></li>
+								<li><p>design</p></li>
+								<li><p>call center</p></li>
 							</ul>
 						</div>
 						
@@ -797,11 +789,11 @@
 
 							<ul class="d-none d-sm-flex mt-2 m-0 p-2 pl-3 job-list-tags">
 								<p class="m-0"><i class="fa fa-tags"></i> Keywords:</p>
-								<li><p>ui designer</li>
-								<li><p>developer</li>
-								<li><p>seniorit company</li>
-								<li><p>design</li>
-								<li><p>call center</li>
+								<li><p>ui designer</p></li>
+								<li><p>developer</p></li>
+								<li><p>seniorit company</p></li>
+								<li><p>design</p></li>
+								<li><p>call center</p></li>
 							</ul>
 						</div>
 						
@@ -857,11 +849,11 @@
 
 							<ul class="d-none d-sm-flex mt-2 m-0 p-2 pl-3 job-list-tags">
 								<p class="m-0"><i class="fa fa-tags"></i> Keywords:</p>
-								<li><p>ui designer</li>
-								<li><p>developer</li>
-								<li><p>seniorit company</li>
-								<li><p>design</li>
-								<li><p>call center</li>
+								<li><p>ui designer</p></li>
+								<li><p>developer</p></li>
+								<li><p>seniorit company</p></li>
+								<li><p>design</p></li>
+								<li><p>call center</p></li>
 							</ul>
 						</div>
 					</div>
@@ -870,25 +862,58 @@
 		</div>
 	</main>
 
-	<footer class="container-fluid pt-5">
+	<footer class="container-fluid pt-3">
+		<div class="row d-flex justify-content-center animbrand">
+			<!--<img src="img/logo/logo_white_small.png" class="mb-1" width="140px" height="65px">-->
+			<svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="70px" height="100px" viewbox="0 0 612 792" style="enable-background:new 0 0 612 792;" xml:space="preserve">
+				<path style="fill:#CB2D6F;stroke:#CB2D6F;stroke-miterlimit:10;" d="M89.944,394.145c0.099-1.366,2.525-0.604,3.811-0.831
+					c46.448-8.218,125.849,51.474,294.455,39.664c0,0-61.445-55.83-111.063-69.584c0,0,149.426,3.297,221.178,29.565
+					c0,0,6.87,20.605,11.451,95.045l27.479,4.855c0,0,8.397-64.731,3.818-78.486c0,0,66.852-120.56,1.365-215.229
+					c0,0,12.375,27.51-3.656,59.065c0,0-17.56-35.603-41.985-38.838c0,0,60.307-87.382,35.878-211.987
+					c0,0-32.822,93.846-148.848,159.384c0,0,28.241-36.411,22.899-62.302c0,0-77.098,76.059-145.796,85.767c0,0-9.545,0.965-19.277,8.4
+					c0,0,13.167-27.006,34.922-33.68c0,0-285.868,62.504-235.487,233.23c0,0,11.455,82.541,10.691,94.674l24.424-4.86
+					C79.258,458.061,89.182,404.667,89.944,394.145z"/>
+				<path style="fill:#14A098;stroke:#14A098;stroke-miterlimit:10;" d="M547.938,520.715c-18.756-12.182-134.217-36.661-221.26,14.609
+					c0,0-21.867,18.893-51.249,0.963c-29.382-17.953-159.819-54.112-234.86-19.007c0,0,2.335,53.884,8.334,64.212
+					c1.787,3.066,10.717,3.32,10.878,5.244c1.397,15.96,12.708,108.979,113.743,104.903c107.08-4.351,111.5-94.554,111.636-94.554
+					c0.07-14.061,28.145-14.609,30.824,0.046c0,0.023,8.657,91.395,111.729,94.416c111.065,3.275,111.408-103.413,111.408-103.413
+					l8.999-1.993C548.12,586.142,555.563,525.686,547.938,520.715z M177.327,674.969c-22.559,0-93.5-3.137-101.126-90.889
+					c-4.991-57.364-4.808-70.372,89.699-60.686c82.05,8.381,105.981,28.899,105.316,64.875
+					C270.872,607.573,254.499,674.945,177.327,674.969z M527.511,595.644c-2.609,13.97-17.061,80.127-87.408,80.149
+					c-22.559,0-101.149,1.123-108.775-86.63c-4.602-53.038,36.229-59.746,110.31-65.585
+					C530.968,516.549,537.815,540.593,527.511,595.644z"/>
+				<path style="fill:transparent;stroke:transparent;stroke-miterlimit:10;" d="M271.215,588.27c-0.344,19.304-16.716,86.676-93.889,86.699
+					c-22.559,0-93.5-3.137-101.126-90.889c-4.991-57.364-4.808-70.373,89.699-60.686C247.949,531.775,271.88,552.294,271.215,588.27z"/>
+				<path style="fill:transparent;stroke:transparent;stroke-miterlimit:10;" d="M527.511,595.644c-2.609,13.97-17.061,80.127-87.408,80.149
+					c-22.559,0-101.149,1.123-108.775-86.63c-4.602-53.038,36.229-59.746,110.31-65.585
+					C530.968,516.549,537.815,540.593,527.511,595.644z"/>
+				<path style="fill:#FFFFFF;stroke:#000000;stroke-miterlimit:10;" d="M76.2,528.729"/>
+				<path style="fill:#FFFFFF;stroke:#000000;stroke-miterlimit:10;" d="M171.271,581.65"/>
+				<path style="fill:#FFFFFF;stroke:#000000;stroke-miterlimit:10;" d="M201.085,625.76c-35.611-0.419-39.712-62.428,5.901-56.896 c0.219,2.374-11.271,28.809,23.8,25.888C230.991,596.759,231.295,626.114,201.085,625.76z"/>
+				<path style="fill:#FFFFFF;stroke:#000000;stroke-miterlimit:10;" d="M395.734,625.76c-35.61-0.419-39.714-62.427,5.903-56.896 c0.217,2.374-11.271,28.807,23.797,25.888C425.64,596.759,425.943,626.114,395.734,625.76z"/>
+				<path style="fill:transparent;stroke:white;stroke-width:14;stroke-miterlimit:10;" d="M350.908,714.477l52.103,40.563l-25.696-19.772
+					c-5.563,23.867-41.385,56.423-74.152,50.57"/>
+				</svg>
+			<span class="slash-right">&#47;</span>
+			<div>
+				<h3>Job</h3>
+				<small>for Web Developers</small>
+				<!--<small>find your dream job</small>-->
+			</div>
+		</div>
+
+		<hr>
+
 		<div class="row">
 			<div class="col-md-3 col-sm-6 d-flex justify-content-center">
 				<div class="d-block">
-					<img src="img/logo/logo_white_small.png" alt="Logo" width="170px" height="80px">
-					<p>7860 North Park Place<br>
-						San Francisco, CA 94120</p>
+					<!--<img src="img/logo/logo_white_small.png" alt="Logo" width="170px" height="80px">-->
+					<h3 class="text-center">Contacts</h3>
+					<p>7860 North Park Place, <br>San Francisco, CA 94120</p>
 					<p>Call: +1 246-345-0695</p>
 					<p>Email: info@jobwebber.com</p>
-					<!--
-					<div class="social">
-						<a href="#" class="fb"><i class="fab fa-facebook-f"></i></a>
-						<a href="#" class="ins"><i class="fab fa-instagram"></i></a>
-						<a href="#" class="tw"><i class="fab fa-twitter"></i></a>
-						<a href="#" class="li"><i class="fab fa-linkedin-in"></i></a>
-						<a href="#" class="pi"><i class="fab fa-pinterest-p"></i></a>
-					</div>-->
 
-					<div class="social1">
+					<div class="social">
 						<a href="#" class="fb"><i class="fab fa-facebook-f"></i></a>
 						<a href="#" class="ins"><i class="fab fa-instagram"></i></a>
 						<a href="#" class="tw"><i class="fab fa-twitter"></i></a>
@@ -930,7 +955,7 @@
 
 			<div class="col-md-3 col-sm-6 d-flex justify-content-center">
 				<div class="d-block">
-					<h3 class="text-center">Top Searched Categories</h3>
+					<h3 class="text-center">Most Popular Tags</h3>
 					<div class="tags">
 						<ol>
 							<li><a href="#"><i class="fas fa-hashtag"></i>androidDeveloper</a></li>
