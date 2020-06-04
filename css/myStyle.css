@@ -53,6 +53,12 @@ header nav {
 	box-shadow: 0 10px 12px rgba(52, 58, 64, 0.8);
 	border-bottom: 4px solid #cb2d6f;
 	margin-top: 17px;
+	height: 100px;
+}
+
+header nav .navbar-collapse {
+	margin-left: 190px;
+	text-align: center;
 }
 
 header nav .dropdown-menu {
@@ -60,12 +66,20 @@ header nav .dropdown-menu {
 }
 
 header nav .navbar-brand {
+	position: absolute;
 	display: flex;
+	top: 0;
+}
+
+.animbrand .logo-text {
+	position: fixed;
+	margin-left: 67px;
+	transition: 0.8s;
 }
 
 header nav .navbar-brand .slash-right {
-	font-size: 50px;
-	margin-top: 10px;
+	font-size: 40px;
+	margin-top: 17px;
 	color: white;
 }
 
@@ -126,18 +140,14 @@ header nav .navbar-brand > div h3 {
 	font-size: 35px;
 }
 
-.animbrand .bracket-left {
-	margin-left: 78px;
-	margin-top: 25px;
-}
-
+.animbrand .bracket-left,
 .animbrand .bracket-right {
 	margin-left: 78px;
 	margin-top: 25px;
 }
 
 .animbrand a:hover .bracket-left {
-	margin-left: -25px;
+	margin-left: -22px;
 	margin-top: 25px;
 	color: #14A098;
 	opacity: 1;
@@ -145,8 +155,24 @@ header nav .navbar-brand > div h3 {
 	transition: 0.8s;
 }
 
+.animbrand a:hover .slash-right {
+	/*position: absolute;*/
+	margin-left: 130px;
+	margin-top: 32px;
+	font-size: 27px;
+	color: #14A098;
+	opacity: 1;
+	/*color: white;*/
+	transition: 0.8s;
+}
+
+.animbrand a:hover .logo-text {
+	position: absolute;
+	margin-left: 55px;
+}
+
 .animbrand a:hover .bracket-right {
-	margin-left: 180px;
+	margin-left: 192px;
 	margin-top: 25px;
 	color: #14A098;
 	opacity: 1;
@@ -1050,6 +1076,27 @@ footer .app a {
 }
 /* END Footer */
 @media only screen and (max-width: 992px) {
+	header nav {
+
+		min-height: 100px;
+		height: auto;
+	}
+
+	.navbar-toggler {
+		margin: 20px;
+	}
+
+	.navbar-toggler.collapsed {
+		margin-top: 20px;
+	}
+
+	header nav .navbar-collapse,
+	header .navbar .form-inline {
+		margin-left: 0;
+		/*margin-top: 30px;*/
+		justify-content: center;
+	}
+
 	.boxes {
 		position: fixed;
 		top: 90px;
