@@ -41,13 +41,13 @@
     .cand_skills {
         width: 330px;
         display: none;
-        transition: animation .8s;
+        transition: animation 1s;
     }
 
     .cand_exp {
         width: 330px;
         display: none;
-        transition: animation .8s;
+        transition: animation 1s;
     }
 
     .cand_profile {
