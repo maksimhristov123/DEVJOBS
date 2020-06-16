@@ -218,7 +218,8 @@ header .nav-link {
 	padding-bottom: 5px;
 }
 
-header .dropdown-item:focus, header .dropdown-item:hover {
+header .dropdown-item:focus,
+header .dropdown-item:hover {
 	background: #CCCCCC	;
 	color: white;
 }
@@ -261,10 +262,14 @@ header .navbar .form-inline .modal-login-button {
 #registerModal .nav-item {
     border: 1px solid #c4c4c4;
     position: relative;
+/*
+    background-color: #CB2D6F;
+    color: white;
+*/
 }
 
 #registerModal .nav-item.active {
-    background-color: #86af49;
+    background-color: #14A098;
     color: white;
 }
 
@@ -276,13 +281,12 @@ header .navbar .form-inline .modal-login-button {
 	left: 0;
 	margin-left: 45%;
 	border: 15px solid transparent;
-	border-top-color: #86af49;
+	border-top-color: #14A098;
 }
 
 #registerModal nav > div a.nav-item.nav-link:hover,
-nav > div a.nav-item.nav-link:focus
-{
-    transition: 0.9s ease all;
+nav > div a.nav-item.nav-link:focus {
+    transition: 0.4s ease all;
 }
 /*REGISTRATION MODAL TABS END*/
 
@@ -297,18 +301,19 @@ nav > div a.nav-item.nav-link:focus
 .modal-body label i {
 	position: absolute;
 	right: 10px;
+	color: #CB2D6F;
 }
 
 .modal-body form {
-  width: 80%;
-  /*
+  	width: 80%;
+	/*
 	margin: 60px auto;
 	background: #efefef;
 	padding: 60px 120px 80px 120px;
 	text-align: center;
 	-webkit-box-shadow: 2px 2px 3px rgba(0,0,0,0.1);
 	box-shadow: 2px 2px 3px rgba(0,0,0,0.1);
-		*/
+	*/
 }
 
 .modal-body .form-fields label,
@@ -947,6 +952,11 @@ footer {
 	box-shadow: 0 -2px 15px rgba(52, 58, 64, 0.9);
 }
 
+footer,
+.footer-bottom {
+    font-size: 14px;
+}
+
 footer .animbrand .slash-right {
 	font-size: 80px;
 	margin-bottom: -7px;
@@ -1017,7 +1027,7 @@ footer ul li a::before {
 	height: 1px;
 	content: "";
 	/*background: #8a99b3;*/
-	background-color: skyblue;
+	background-color: #CB2D6F;
 	transition: all 0.4s ease 0s;
 }
 
@@ -1065,19 +1075,18 @@ footer .app a {
 */
 
 .footer-bottom {
-	font-size: 14px;
 	background-color: #CCCCCC;
 	color: #0F292F;
 }
 
 .social a {
 	margin-right: 20px;
-	color: skyblue;
+    font-size: 20px;
+	color: #CB2D6F;
 }
 /* END Footer */
 @media only screen and (max-width: 992px) {
 	header nav {
-
 		min-height: 100px;
 		height: auto;
 	}
@@ -3728,3 +3737,186 @@ nav > div a.nav-item.nav-link:focus
 }
 /*QUIZ END*/
 /*APPLY JOB PAGE END*/
+
+
+
+
+
+
+
+
+
+
+
+.aboutUs section:nth-child(odd) {
+	background-color: #CCCCCC;
+}
+
+.aboutUs section:nth-child(3) {
+	text-align: right;
+}
+
+.aboutUs-breadcrumb ol li a:after {
+	content: '>';
+	margin: 0 5px;
+	font-weight: 600;
+}
+
+
+
+
+
+
+
+/*ot works*/
+/*how its work*/
+
+
+/*.header-how-it-works {
+	 padding-top: 4rem;
+}
+ .header-how-it-works h1 {
+	 max-width: 865px;
+	 font-size: 55px;
+	 font-weight: 900;
+	 letter-spacing: -1.7px;
+	 color: var(--white);
+}
+ .header-how-it-works h2 {
+	 max-width: 865px;
+	 font-size: 18px;
+	 font-weight: 800;
+	 letter-spacing: 0.55px;
+	 color: var(--white);
+}
+ .header-how-it-works p {
+	 max-width: 865px;
+	 margin-top: 2rem;
+	 font-size: 26px;
+	 font-weight: 500;
+	 line-height: 1.46;
+	 letter-spacing: 0.25px;
+	 color: var(--white);
+}
+ @media (max-width: 991px) {
+	 .header-how-it-works h1 {
+		 font-size: 1.8rem;
+	}
+	 .header-how-it-works p {
+		 font-size: 1.2rem;
+	}
+}
+ .page-how-it-works .titles {
+	 display: flex;
+	 align-items: center;
+	 margin-top: 2.5rem;
+	 margin-bottom: 1rem;
+}
+ .page-how-it-works .titles h3 {
+	 width: 50%;
+	 font-size: 32px;
+	 font-weight: 900;
+	 text-align: center;
+	 color: var(--accent-green);
+}
+ .page-how-it-works .titles .titles-center {
+	 position: absolute;
+	 left: 50%;
+	 transform: translate(-50%, 0);
+}
+ .page-how-it-works .step {
+	 display: flex;
+	 overflow: hidden;
+	 position: relative;
+	 text-align: center;
+	 border-radius: 10px;
+}
+ .page-how-it-works .step-bg {
+	 background-color: var(--section-bgr-light-gray);
+}
+ .page-how-it-works .img-holder {
+	 height: 150px;
+}
+ .page-how-it-works .side {
+	 width: 50%;
+	 padding: 3.5rem 3.5rem 2.5rem 3.5rem;
+	 display: flex;
+	 flex-direction: column;
+	 align-items: center;
+}
+ .page-how-it-works .side h4 {
+	 font-size: 18px;
+	 font-weight: 800;
+	 letter-spacing: 0.55px;
+}
+ .page-how-it-works .side p {
+	 line-height: 1.5;
+}
+ .page-how-it-works .side-last {
+	 padding-bottom: 4rem;
+}
+ .page-how-it-works .side-last h4 {
+	 font-size: 22px;
+	 margin-bottom: 0.4rem;
+}
+.page-how-it-works .circle-holder {
+	 position: absolute;
+	 display: flex;
+	 align-items: center;
+	 justify-content: center;
+	 width: 100%;
+	 top: 50%;
+	 left: 50%;
+	 transform: translate(-50%, -50%);
+}
+ .page-how-it-works .circle {
+	 position: absolute;
+	 display: flex;
+	 align-items: center;
+	 justify-content: center;
+	 width: 50px;
+	 height: 50px;
+	 background-color: #cce6f6;
+	 border-radius: 50px;
+	 font-size: 22px;
+	 font-weight: 800;
+	 letter-spacing: 0.5px;
+	 text-align: center;
+	 color: #0081d2;
+}
+ .page-how-it-works .circle-before:before {
+	 content: '';
+	 position: absolute;
+	 width: 100vh;
+	 border-top: 4px dotted #cce6f6;
+	 transform: rotate(270deg) translate(50%);
+	 z-index: -1;
+	 top: -0.2rem;
+}
+ .page-how-it-works .circle-after:after {
+	 content: '';
+	 position: absolute;
+	 width: 100vh;
+	 border-top: 4px dotted #cce6f6;
+	 transform: rotate(90deg) translate(50%);
+	 z-index: -1;
+	 top: 3.2rem;
+}
+ @media (max-width: 991px) {
+	 .page-how-it-works .titles h3 {
+		 width: 100%;
+	}
+	 .page-how-it-works .side {
+		 width: 100%;
+		 padding: 2rem 1.5rem;
+	}
+}
+ .how-it-works-nav .how-it-works-col[class] {
+	 display: flex !important;
+}
+ @media (max-width: 991px) {
+	 .how-it-works-nav .how-it-works-col[class] {
+		 padding: 0;
+	}
+}*/
+/*ot works end*/
