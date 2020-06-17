@@ -583,7 +583,8 @@ input[type="checkbox"]:checked + label:before {
 */
 
 .candidate-box a,
-.employer-box a {
+.employer-box a,
+.aboutUs section .btns a {
 	background-color: #0F292F;
 	color: white;
 	font-weight: bold;
@@ -593,19 +594,23 @@ input[type="checkbox"]:checked + label:before {
 }
 
 .candidate-box a:hover,
-.employer-box a:hover {
+.employer-box a:hover,
+.aboutUs section .btns a:hover {
 	background-color: white;
 	color: #0F292F;
 	transition: 0.4s;
 }
 
-.candidate-box a:hover, .employer-box a:hover {
+.candidate-box a:hover,
+.employer-box a:hover,
+.aboutUs section .btns a:hover {
 	text-decoration: none;
 	/*
 	background-image: radial-gradient(white, skyblue);
 	color: blue;
 	*/
 }
+
 /* END Candidates and Employers Box */
 
 /* OR */
@@ -3752,14 +3757,41 @@ nav > div a.nav-item.nav-link:focus
 	background-color: #CCCCCC;
 }
 
-.aboutUs section:nth-child(3) {
-	text-align: right;
-}
-
 .aboutUs-breadcrumb ol li a:after {
 	content: '>';
 	margin: 0 5px;
 	font-weight: 600;
+}
+
+.aboutUs .num {
+    font-size: 15px;
+    font-weight: 700;
+    display: inline-block;
+    vertical-align: baseline;
+    margin-top: -80px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background: #CB2D6F;
+    color: #fff !important;
+}
+
+.aboutUs section .btns a.empl:hover {
+	background-color: #CB2D6F;
+	color: white;
+	transition: 0.4s;
+}
+
+.aboutUs section .btns a.cand:hover {
+	background-color: #14A098;
+	color: white;
+	transition: 0.4s;
 }
 
 
