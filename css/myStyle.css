@@ -11,7 +11,8 @@ footer {
 }
 
 main {
-	margin-top: 12%;
+	/*margin-top: 12%;*/
+    margin-top: 160px;
 }
 
 .how-it-works, .counter, .partners {
@@ -3749,18 +3750,18 @@ nav > div a.nav-item.nav-link:focus
 
 
 
-
-
-
+/*
+.aboutUs {
+    margin-top: 150px;
+}
+*/
 
 .aboutUs section:nth-child(odd) {
 	background-color: #CCCCCC;
 }
 
-.aboutUs-breadcrumb ol li a:after {
-	content: '>';
-	margin: 0 5px;
-	font-weight: 600;
+.aboutUs nav .breadcrumb {
+    background-color: #CCCCCC;
 }
 
 .aboutUs .num {
